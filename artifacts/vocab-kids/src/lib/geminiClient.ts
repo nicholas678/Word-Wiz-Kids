@@ -10,7 +10,7 @@ export interface ExtractedWord {
   category: string;
 }
 
-export const GEMINI_VISION_MODEL = 'gemini-2.5-flash-lite';
+export const GEMINI_VISION_MODEL = 'gemini-3.5-flash-lite';
 
 export type GeminiKeyCheck =
   | { status: 'missing'; message: string }
