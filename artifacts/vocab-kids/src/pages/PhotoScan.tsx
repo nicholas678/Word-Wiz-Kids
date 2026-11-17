@@ -36,7 +36,7 @@ async function detectWordsFromImage(base64Image: string, mimeType: string): Prom
 - 如果圖片中沒有英文單字，回傳空陣列 []`;
 
   const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
