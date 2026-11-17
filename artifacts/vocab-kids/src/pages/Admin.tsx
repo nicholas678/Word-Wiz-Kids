@@ -33,7 +33,7 @@ import { useWordLibrary } from '@/hooks/useWordLibrary';
 import { ARENA_HOST_SESSION_KEY, createArenaRoom, getArenaErrorMessage } from '@/lib/realtimeArena';
 
 const PIN_STORAGE_KEY = 'vocab-admin-pin';
-const DEFAULT_PIN = '0220';
+const DEFAULT_PIN = '2018';
 
 function getStoredPin(): string {
   return localStorage.getItem(PIN_STORAGE_KEY) ?? DEFAULT_PIN;
