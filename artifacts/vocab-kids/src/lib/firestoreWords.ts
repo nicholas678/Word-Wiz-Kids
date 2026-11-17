@@ -77,8 +77,8 @@ export function buildWordRecord(params: WordCandidate): Omit<FirestoreWord, 'id'
     chinese: normalized.chinese,
     phonetic: normalized.phonetic,
     category: normalized.category,
-    example: normalized.example ?? `I see a ${normalized.english}.`,
-    exampleChinese: normalized.exampleChinese ?? `我看到一個${normalized.chinese}。`,
+    example: normalized.example ?? '',
+    exampleChinese: normalized.exampleChinese ?? '',
     vowels: computeVowels(normalized.english),
     diphthongs: computeDiphthongs(normalized.english),
   };
